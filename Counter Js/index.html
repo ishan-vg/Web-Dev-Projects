@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter WebApp</title>
+    <script>
+
+    </script>
+</head>
+<body>
+
+    <h1 id="main"></h1>
+    <button  id="add" onclick="Add()">Add</button>
+    <button id="reset" onclick="Reset()">Reset</button>
+    <button id="subtract" onclick="Subtract()">Subtract</button>
+</body>
+<script>
+
+var number = 0;
+document.getElementById("main").innerHTML = number;
+
+function Add(){
+    number++;
+    document.getElementById("main").innerHTML = number;
+}
+
+function Subtract(){
+    number--;
+    document.getElementById("main").innerHTML = number;
+}
+
+function Reset(){
+    number = 0;
+    document.getElementById("main").innerHTML = number;
+}
+document.getElementById("add").onclick = Add;
+document.getElementById("subtract").onclick = Subtract;
+document.getElementById("reset").onclick = Reset;
+
+</script>
+</html>
